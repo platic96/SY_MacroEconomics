@@ -1,0 +1,88 @@
+# 📰 Bloomberg & Wall Street 주요 뉴스 요약
+**기준일시:** 2026년 4월 12일 (일) 08:30 KST
+
+---
+
+## 1. 미-이란 휴전 합의 — 시장 랠리 촉발
+
+- **4월 7~8일**, 트럼프 대통령의 최후통첩(군사 타격) 1시간 전 미국과 이란이 **2주 휴전**에 합의.
+- 휴전 조건: **이란의 호르무즈 해협 즉각 재개방**.
+- 유가 급락: **브렌트유 -13% → $94.80/배럴**, WTI -15% → $95.75 (전쟁 전 $70 대비 여전히 높은 수준).
+- 증시 급등: S&P 500 +2.5%, 나스닥 +2.8%, 다우 +1,325pt, 러셀 2000 +2.9%.
+- 전문가들은 에너지·원자재 시장이 **구조적으로 높은 가격 상태를 유지할 것**으로 경고.
+
+---
+
+## 2. 3월 CPI — 3.3% (2024년 4월 이후 최고)
+
+| 지표 | 결과 |
+|------|------|
+| 월간 CPI | **+0.9%** |
+| 연간 CPI | **+3.3%** (전월 2.4% → 급등) |
+| 에너지 (월간) | **+10.9%** |
+| 에너지 (연간) | **+12.5%** |
+| 휘발유 (월간) | **+21.2%** |
+| 코어 CPI (월간) | +0.2% (예상 하회) |
+| 코어 CPI (연간) | **+2.6%** (예상 하회) |
+
+- 전체 월간 CPI 상승분의 **약 3/4**을 에너지가 차지.
+- 코어 인플레이션은 예상을 0.1%p 하회하며 에너지 제외 시 상대적으로 안정적.
+
+---
+
+## 3. 연준(Fed) — 금리 동결, 인하 시기 2027년으로 후퇴
+
+- **3월 18일 FOMC**: 기준금리 **3.50%~3.75% 동결**.
+- 에너지발 인플레이션과 지정학적 불확실성으로 금리 인하 시점이 **2027년으로 사실상 밀림**.
+- 시장은 2026년 내 금리 인하 가능성을 **거의 배제**한 상태.
+- 국채 하락: CPI 발표 후 채권 트레이더들의 금리 인하 베팅이 추가 약화.
+
+---
+
+## 4. 증시 동향 — 5주 만에 하락세 종료, 랠리 2일 연속
+
+- S&P 500, 나스닥 100 모두 **약보합~플랫** 유지 (5주 만에 반등 흐름 지속).
+- 지수 모두 **5주 고점** 근방에서 등락.
+
+**주요 등락 종목 (4월 11~12일 기준):**
+
+| 종목 | 등락률 |
+|------|--------|
+| Nvidia | +2.58% |
+| Amazon | +2.05% |
+| Caterpillar | +0.43% |
+| Verizon | -3.62% |
+| Salesforce | -3.43% |
+| Nike | -3.14% |
+
+---
+
+## 5. 1분기 실적시즌 개막 — 대형 금융주 주목
+
+- 주요 금융기관들의 **Q1 2026 실적 발표**로 어닝시즌 개막.
+- 투자자들은 에너지 충격과 지정학적 위험 속에서도 기업들이 **이익 모멘텀을 유지할 수 있는지** 주시.
+- Wall Street: 전쟁 피해로 인한 인플레이션·에너지 공급 차질·연준 여력 제한은 **휴전 이후에도 단기간에 회복 불가** 경고.
+
+---
+
+## 6. 에너지 시장 — 구조적 상승 고착화 우려
+
+- 2026년 에너지 가격: 연간 **+12.5%** (블룸버그 500 내 에너지 섹터 비중 2.87%로 수십 년 최저).
+- 호르무즈 해협 봉쇄 해제 이후에도 각국의 재비축 수요로 **에너지 가격 하방 압력 제한**.
+- 레바논-헤즈볼라 충돌이 이번 주말 파키스탄 협상에 변수로 부상.
+
+---
+
+## 핵심 요약
+
+> **미-이란 휴전으로 시장이 안도 랠리를 이어가고 있으나, 3.3%의 높은 CPI와 연준의 금리 동결 기조, 여전히 전쟁 전보다 높은 유가가 맞물리면서 경제 불확실성은 지속. 1분기 어닝시즌과 중동 협상 향방이 향후 시장 방향성을 결정할 핵심 변수.**
+
+---
+
+## 주요 출처
+- [Bloomberg — Wall Street Strategists Wrestle With War's Toll on 2026 Outlook](https://www.bloomberg.com/news/articles/2026-04-10/wall-street-strategists-wrestle-with-war-s-toll-on-2026-outlook)
+- [Bloomberg — US Treasuries Fall as Inflation Data Erode Fed Rate-Cut Wager](https://www.bloomberg.com/news/articles/2026-04-10/bond-traders-cling-to-bets-on-a-fed-rate-cut-this-year-after-cpi)
+- [CNBC — CPI Inflation Report March 2026: Consumer Prices Rose 3.3%](https://www.cnbc.com/2026/04/10/cpi-inflation-report-march-2026.html)
+- [NPR — Oil Prices Plunge and Stocks Soar After U.S. and Iran Agree on Ceasefire](https://www.npr.org/2026/04/08/nx-s1-5776818/wall-street-stocks-oil-trump-iran-ceasefire)
+- [CNBC — A Fragile U.S.-Iran Ceasefire Sparks Market Relief](https://www.cnbc.com/2026/04/08/us-iran-war-ceasefire-middle-east-strait-of-hormuz-oil-markets.html)
+- [Yahoo Finance — Stock Market Today: Dow, S&P 500, Nasdaq Extend Rally](https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-extend-rally-for-2nd-day-on-hopes-of-iran-war-deescalation-200008381.html)
