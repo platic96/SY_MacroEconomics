@@ -1,0 +1,38 @@
+name: Daily News Summary
+
+on:
+  schedule:
+    - cron: '30 23 * * *'  # 08:30 KST (23:30 UTC)
+  workflow_dispatch:
+
+jobs:
+  generate-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Generate news summary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: python scripts/generate_news.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add daily_news/
+          git diff --staged --quiet || git commit -m "feat: $(date +'%y%m%d') Bloomberg & Wall Street 뉴스 요약 자동 업로드"
+          git push
