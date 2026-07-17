@@ -2,7 +2,7 @@ name: Daily News Summary
 
 on:
   schedule:
-    - cron: '0 21 * * *'  # 06:00 KST (21:00 UTC) — 노션 루틴(06:30 KST)보다 먼저 실행
+     - cron: '20 20 * * *'  # 05:20 KST (20:20 UTC) — 노션 루틴(06:30)보다 앞당김
   workflow_dispatch:
 
 jobs:
