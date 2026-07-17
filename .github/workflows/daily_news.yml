@@ -2,7 +2,7 @@ name: Daily News Summary
 
 on:
   schedule:
-    - cron: '30 23 * * *'  # 08:30 KST (23:30 UTC)
+    - cron: '0 21 * * *'  # 06:00 KST (21:00 UTC) — 노션 루틴(06:30 KST)보다 먼저 실행
   workflow_dispatch:
 
 jobs:
@@ -28,6 +28,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: python scripts/generate_news.py
+
+      - name: Fetch market indicators
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python scripts/fetch_indicators.py
 
       - name: Commit and push
         run: |
