@@ -23,21 +23,22 @@ jobs:
       - name: Install dependencies
         run: pip install anthropic requests
 
-      - name: Generate news summary
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-        run: python scripts/generate_news.py
-
       - name: Fetch market indicators
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python scripts/fetch_indicators.py
+
+      - name: Generate news summary
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: python scripts/generate_news.py
 
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add daily_news/
-          git diff --staged --quiet || git commit -m "feat: $(date +'%y%m%d') Bloomberg & Wall Street 뉴스 요약 자동 업로드"
+          git diff --staged --quiet || git commit -m "feat: $(date +'%y%m%d') 뉴스 요약 + 시장 지표 자동 업로드"
           git push
