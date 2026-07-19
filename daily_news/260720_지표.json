@@ -1,0 +1,28 @@
+{
+  "date": "260720",
+  "generated_at_kst": "2026-07-20 06:10",
+  "fear_greed": {
+    "score": 37,
+    "rating": "fear"
+  },
+  "vix": {
+    "value": 18.77,
+    "date": "2026-07-18",
+    "source": "yahoo"
+  },
+  "wti": {
+    "value": 81.78,
+    "date": "2026-07-18",
+    "source": "yahoo"
+  },
+  "brent": {
+    "value": 88.1,
+    "date": "2026-07-18",
+    "source": "yahoo"
+  },
+  "us10y": {
+    "value": 4.54,
+    "date": "2026-07-18",
+    "source": "yahoo"
+  }
+}
