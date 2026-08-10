@@ -1,11 +1,6 @@
 """
 매일 시장 지표 + 관심 종목을 받아 daily_news/{YMD}_지표.json 으로 저장한다.
-
-- Fear & Greed : CNN 비공식 API (requests + 브라우저 헤더 → 봇차단 우회)
-- VIX/WTI/Brent/10Y : 야후(실시간) 우선 → 실패 시 FRED(무료키, 며칠 지연)
-- 관심 종목 : 야후 종가 + 등락률 (달러/원화 자동 구분)
-
-노션 루틴은 이 JSON을 GitHub raw로 읽기만 한다(API 직접 호출 X → 차단 문제 원천 제거).
+일요일에는 주간 데이터(weekly)도 함께 저장한다.
 """
 import os
 import json
@@ -156,6 +151,64 @@ def fetch_watchlist():
     return out
 
 
+# ====================== 주간 데이터 (일요일용) ======================
+
+def fetch_weekly_series(symbol, days=5):
+    """최근 N거래일 종가 시계열 + 주간 등락률. 실패 시 None."""
+    try:
+        r = requests.get(
+            f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}",
+            params={"range": "10d", "interval": "1d"},
+            headers=YAHOO_HEADERS, timeout=20,
+        )
+        r.raise_for_status()
+        res = r.json()["chart"]["result"][0]
+        ts = res["timestamp"]
+        closes = res["indicators"]["quote"][0]["close"]
+        rows = [(t, c) for t, c in zip(ts, closes) if c is not None]
+        if len(rows) < 2:
+            return None
+        window = rows[-(days + 1):] if len(rows) > days else rows
+        first, last = window[0][1], window[-1][1]
+        pct = (last - first) / first * 100 if first else 0
+        return {
+            "week_start": round(float(first), 2),
+            "week_end": round(float(last), 2),
+            "week_pct": round(float(pct), 2),
+            "start_date": (datetime.utcfromtimestamp(window[0][0])
+                           + timedelta(hours=9)).strftime("%Y-%m-%d"),
+            "end_date": (datetime.utcfromtimestamp(window[-1][0])
+                         + timedelta(hours=9)).strftime("%Y-%m-%d"),
+        }
+    except Exception as e:
+        print(f"[Weekly {symbol}] 실패: {e}")
+        return None
+
+
+def fetch_weekly():
+    """일요일용 주간 데이터: 지수·지표·관심종목의 주간 등락."""
+    indices = [("^GSPC", "S&P 500"), ("^IXIC", "나스닥"),
+               ("^DJI", "다우존스"), ("^KS11", "KOSPI")]
+    idx = []
+    for sym, name in indices:
+        w = fetch_weekly_series(sym)
+        idx.append({"symbol": sym, "name": name, **(w or {"week_pct": None})})
+
+    inds = [("^VIX", "VIX"), ("CL=F", "WTI"),
+            ("BZ=F", "브렌트"), ("^TNX", "미 10년물")]
+    ind = []
+    for sym, name in inds:
+        w = fetch_weekly_series(sym)
+        ind.append({"symbol": sym, "name": name, **(w or {"week_pct": None})})
+
+    stocks = []
+    for sym, name in WATCHLIST:
+        w = fetch_weekly_series(sym)
+        stocks.append({"symbol": sym, "name": name, **(w or {"week_pct": None})})
+
+    return {"indices": idx, "indicators": ind, "watchlist": stocks}
+
+
 def main():
     data = {
         "date": YMD,
@@ -167,6 +220,11 @@ def main():
         "us10y": fetch_indicator("^TNX", "DGS10"),
         "watchlist": fetch_watchlist(),
     }
+
+    # 일요일(weekday()==6)에만 주간 데이터 추가 → 주간 시황 루틴에서 사용
+    if KST_NOW.weekday() == 6:
+        print("[주간] 일요일 감지 → 주간 데이터 수집")
+        data["weekly"] = fetch_weekly()
 
     os.makedirs(OUT_DIR, exist_ok=True)
     out_path = os.path.join(OUT_DIR, f"{YMD}_지표.json")
