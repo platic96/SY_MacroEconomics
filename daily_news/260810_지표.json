@@ -1,6 +1,6 @@
 {
   "date": "260810",
-  "generated_at_kst": "2026-08-10 05:54",
+  "generated_at_kst": "2026-08-10 14:10",
   "fear_greed": {
     "score": 64,
     "rating": "greed"
@@ -11,13 +11,13 @@
     "source": "yahoo"
   },
   "wti": {
-    "value": 78.18,
-    "date": "2026-08-08",
+    "value": 78.44,
+    "date": "2026-08-10",
     "source": "yahoo"
   },
   "brent": {
-    "value": 83.55,
-    "date": "2026-08-08",
+    "value": 83.99,
+    "date": "2026-08-10",
     "source": "yahoo"
   },
   "us10y": {
@@ -83,10 +83,10 @@
     {
       "symbol": "442580.KS",
       "name": "PLUS 글로벌HBM반도체",
-      "price": 92305.0,
-      "change": -190.0,
-      "pct": -0.21,
-      "date": "2026-08-07",
+      "price": 91740.0,
+      "change": -565.0,
+      "pct": -0.61,
+      "date": "2026-08-10",
       "currency": "KRW"
     }
   ]
