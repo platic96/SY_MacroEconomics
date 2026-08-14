@@ -28,6 +28,12 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python scripts/fetch_indicators.py
 
+      - name: Push to Notion diary
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python scripts/push_diary.py
+        continue-on-error: true
+
       - name: Generate news summary
         continue-on-error: true
         env:
