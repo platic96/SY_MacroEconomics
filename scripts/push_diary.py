@@ -55,18 +55,19 @@ INDICATORS = [
     ("미10년", "^TNX"),
 ]
 
-# 3 Market — 사진 순서 + SOXX·DRAM 추가
+# 3 Market — 사진 순서 + SOXX·DRAM 추가. 마지막 값은 단위.
+#   지수는 포인트라 단위가 없고, 주식·ETF·원자재는 $, 환율은 원.
 MARKET = [
-    ("나스닥", "^IXIC"),
-    ("S&P500", "^GSPC"),
-    ("비트코인", "BTC-USD"),
-    ("달러원", "KRW=X"),
-    ("이더리움", "ETH-USD"),
-    ("금", "GC=F"),
-    ("SOXX", "SOXX"),        # iShares 반도체 ETF
-    ("DRAM", "DRAM"),        # Roundhill 메모리 ETF
-    ("IREN", "IREN"),
-    ("RKLB", "RKLB"),
+    ("나스닥", "^IXIC", ""),
+    ("S&P500", "^GSPC", ""),
+    ("비트코인", "BTC-USD", "$"),
+    ("달러원", "KRW=X", "원"),
+    ("이더리움", "ETH-USD", "$"),
+    ("금", "GC=F", "$"),
+    ("SOXX", "SOXX", "$"),        # iShares 반도체 ETF
+    ("DRAM", "DRAM", "$"),        # Roundhill 메모리 ETF
+    ("IREN", "IREN", "$"),
+    ("RKLB", "RKLB", "$"),
 ]
 
 
@@ -150,11 +151,15 @@ def load_indicators():
         return json.load(f)
 
 
-def fmt(name, price, pct, suffix=""):
-    """'나스닥 26,803 (+0.83%)' 형태. 값이 없으면 None."""
+def fmt(name, price, pct, unit=""):
+    """'SOXX $550.74 (+0.76%)' 형태. 값이 없으면 None.
+
+    unit 은 '$'(앞에 붙임) / '원'·'%'(뒤에 붙임) / ''(지수라 단위 없음).
+    """
     if price is None:
         return None
-    text = f"{name} {num(price)}{suffix}"
+    value = f"${num(price)}" if unit == "$" else f"{num(price)}{unit}"
+    text = f"{name} {value}"
     if pct is not None:
         text += f" ({pct:+.2f}%)"
     return text
@@ -179,7 +184,8 @@ def build_지표(data):
     # WTI 와 브렌트는 한 덩어리로 묶는다
     wti, wti_pct, _ = quotes["WTI"]
     brent, brent_pct, _ = quotes["브렌트"]
-    oil = [s for s in (fmt("WTI", wti, wti_pct), fmt("브렌트", brent, brent_pct)) if s]
+    oil = [s for s in (fmt("WTI", wti, wti_pct, "$"),
+                       fmt("브렌트", brent, brent_pct, "$")) if s]
     if oil:
         parts.append(" / ".join(oil))
 
@@ -194,9 +200,9 @@ def build_지표(data):
 
 def build_market():
     parts = []
-    for name, sym in MARKET:
+    for name, sym, unit in MARKET:
         price, pct, _ = fetch_quote(sym)
-        line = fmt(name, price, pct)
+        line = fmt(name, price, pct, unit)
         if line:
             parts.append(line)
     return " · ".join(parts)
