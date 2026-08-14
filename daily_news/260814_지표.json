@@ -1,27 +1,27 @@
 {
   "date": "260814",
-  "generated_at_kst": "2026-08-14 21:13",
+  "generated_at_kst": "2026-08-14 21:48",
   "fear_greed": {
     "score": 67,
     "rating": "greed"
   },
   "vix": {
-    "value": 14.51,
+    "value": 14.52,
     "date": "2026-08-14",
     "source": "yahoo"
   },
   "wti": {
-    "value": 81.71,
+    "value": 81.5,
     "date": "2026-08-14",
     "source": "yahoo"
   },
   "brent": {
-    "value": 87.28,
+    "value": 87.25,
     "date": "2026-08-14",
     "source": "yahoo"
   },
   "us10y": {
-    "value": 4.64,
+    "value": 4.63,
     "date": "2026-08-14",
     "source": "yahoo"
   },
