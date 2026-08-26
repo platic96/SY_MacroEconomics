@@ -1,0 +1,93 @@
+{
+  "date": "260827",
+  "generated_at_kst": "2026-08-27 06:56",
+  "fear_greed": {
+    "score": 55,
+    "rating": "greed"
+  },
+  "vix": {
+    "value": 15.21,
+    "date": "2026-08-27",
+    "source": "yahoo"
+  },
+  "wti": {
+    "value": 81.91,
+    "date": "2026-08-27",
+    "source": "yahoo"
+  },
+  "brent": {
+    "value": 86.56,
+    "date": "2026-08-27",
+    "source": "yahoo"
+  },
+  "us10y": {
+    "value": 4.66,
+    "date": "2026-08-27",
+    "source": "yahoo"
+  },
+  "watchlist": [
+    {
+      "symbol": "IREN",
+      "name": "아이렌",
+      "price": 39.58,
+      "change": -2.63,
+      "pct": -6.23,
+      "date": "2026-08-27",
+      "currency": "USD"
+    },
+    {
+      "symbol": "IRE",
+      "name": "디파이언스 2X IREN ETF",
+      "price": 9.36,
+      "change": -1.35,
+      "pct": -12.61,
+      "date": "2026-08-27",
+      "currency": "USD"
+    },
+    {
+      "symbol": "RKLB",
+      "name": "로켓랩",
+      "price": 66.18,
+      "change": -0.73,
+      "pct": -1.09,
+      "date": "2026-08-27",
+      "currency": "USD"
+    },
+    {
+      "symbol": "DRAM",
+      "name": "라운드힐 메모리 ETF",
+      "price": 56.39,
+      "change": 0.15,
+      "pct": 0.27,
+      "date": "2026-08-27",
+      "currency": "USD"
+    },
+    {
+      "symbol": "INFQ",
+      "name": "인플렉션",
+      "price": 13.53,
+      "change": -0.3,
+      "pct": -2.17,
+      "date": "2026-08-27",
+      "currency": "USD"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "마벨",
+      "price": 245.11,
+      "change": 4.73,
+      "pct": 1.97,
+      "date": "2026-08-27",
+      "currency": "USD"
+    },
+    {
+      "symbol": "442580.KS",
+      "name": "PLUS 글로벌HBM반도체",
+      "price": 98900.0,
+      "change": -280.0,
+      "pct": -0.28,
+      "date": "2026-08-26",
+      "currency": "KRW"
+    }
+  ]
+}
