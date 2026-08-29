@@ -1,0 +1,236 @@
+{
+  "date": "260830",
+  "generated_at_kst": "2026-08-30 07:41",
+  "fear_greed": {
+    "score": 54,
+    "rating": "neutral"
+  },
+  "vix": {
+    "value": 14.43,
+    "date": "2026-08-29",
+    "source": "yahoo"
+  },
+  "wti": {
+    "value": 83.4,
+    "date": "2026-08-29",
+    "source": "yahoo"
+  },
+  "brent": {
+    "value": 88.1,
+    "date": "2026-08-29",
+    "source": "yahoo"
+  },
+  "us10y": {
+    "value": 4.72,
+    "date": "2026-08-29",
+    "source": "yahoo"
+  },
+  "watchlist": [
+    {
+      "symbol": "IREN",
+      "name": "아이렌",
+      "price": 35.45,
+      "change": -5.08,
+      "pct": -12.53,
+      "date": "2026-08-29",
+      "currency": "USD"
+    },
+    {
+      "symbol": "IRE",
+      "name": "디파이언스 2X IREN ETF",
+      "price": 7.32,
+      "change": -2.49,
+      "pct": -25.38,
+      "date": "2026-08-29",
+      "currency": "USD"
+    },
+    {
+      "symbol": "RKLB",
+      "name": "로켓랩",
+      "price": 64.39,
+      "change": -3.14,
+      "pct": -4.65,
+      "date": "2026-08-29",
+      "currency": "USD"
+    },
+    {
+      "symbol": "DRAM",
+      "name": "라운드힐 메모리 ETF",
+      "price": 55.83,
+      "change": -1.0,
+      "pct": -1.76,
+      "date": "2026-08-29",
+      "currency": "USD"
+    },
+    {
+      "symbol": "INFQ",
+      "name": "인플렉션",
+      "price": 12.8,
+      "change": -1.52,
+      "pct": -10.61,
+      "date": "2026-08-29",
+      "currency": "USD"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "마벨",
+      "price": 216.62,
+      "change": -24.83,
+      "pct": -10.28,
+      "date": "2026-08-29",
+      "currency": "USD"
+    },
+    {
+      "symbol": "442580.KS",
+      "name": "PLUS 글로벌HBM반도체",
+      "price": 97410.0,
+      "change": -3900.0,
+      "pct": -3.85,
+      "date": "2026-08-28",
+      "currency": "KRW"
+    }
+  ],
+  "weekly": {
+    "indices": [
+      {
+        "symbol": "^GSPC",
+        "name": "S&P 500",
+        "week_start": 7674.37,
+        "week_end": 7711.76,
+        "week_pct": 0.49,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "^IXIC",
+        "name": "나스닥",
+        "week_start": 26180.46,
+        "week_end": 26402.42,
+        "week_pct": 0.85,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "^DJI",
+        "name": "다우존스",
+        "week_start": 53277.01,
+        "week_end": 53559.99,
+        "week_pct": 0.53,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "^KS11",
+        "name": "KOSPI",
+        "week_start": 6912.95,
+        "week_end": 6788.88,
+        "week_pct": -1.79,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      }
+    ],
+    "indicators": [
+      {
+        "symbol": "^VIX",
+        "name": "VIX",
+        "week_start": 15.13,
+        "week_end": 14.43,
+        "week_pct": -4.63,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "CL=F",
+        "name": "WTI",
+        "week_start": 87.83,
+        "week_end": 83.53,
+        "week_pct": -4.9,
+        "start_date": "2026-08-20",
+        "end_date": "2026-08-27"
+      },
+      {
+        "symbol": "BZ=F",
+        "name": "브렌트",
+        "week_start": 93.78,
+        "week_end": 89.7,
+        "week_pct": -4.35,
+        "start_date": "2026-08-20",
+        "end_date": "2026-08-27"
+      },
+      {
+        "symbol": "^TNX",
+        "name": "미 10년물",
+        "week_start": 4.74,
+        "week_end": 4.72,
+        "week_pct": -0.38,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      }
+    ],
+    "watchlist": [
+      {
+        "symbol": "IREN",
+        "name": "아이렌",
+        "week_start": 41.88,
+        "week_end": 35.45,
+        "week_pct": -15.35,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "IRE",
+        "name": "디파이언스 2X IREN ETF",
+        "week_start": 10.61,
+        "week_end": 7.32,
+        "week_pct": -31.01,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "RKLB",
+        "name": "로켓랩",
+        "week_start": 72.57,
+        "week_end": 64.39,
+        "week_pct": -11.27,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "DRAM",
+        "name": "라운드힐 메모리 ETF",
+        "week_start": 57.68,
+        "week_end": 55.83,
+        "week_pct": -3.21,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "INFQ",
+        "name": "인플렉션",
+        "week_start": 14.12,
+        "week_end": 12.8,
+        "week_pct": -9.35,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "MRVL",
+        "name": "마벨",
+        "week_start": 237.04,
+        "week_end": 216.62,
+        "week_pct": -8.61,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      },
+      {
+        "symbol": "442580.KS",
+        "name": "PLUS 글로벌HBM반도체",
+        "week_start": 103600.0,
+        "week_end": 97410.0,
+        "week_pct": -5.97,
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-28"
+      }
+    ]
+  }
+}
