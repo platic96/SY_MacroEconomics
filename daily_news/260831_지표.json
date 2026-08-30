@@ -1,0 +1,46 @@
+{
+  "date": "260831",
+  "generated_at_kst": "2026-08-31 06:06",
+  "fear_greed": null,
+  "vix": null,
+  "wti": null,
+  "brent": null,
+  "us10y": null,
+  "watchlist": [
+    {
+      "symbol": "IREN",
+      "name": "아이렌",
+      "price": null
+    },
+    {
+      "symbol": "IRE",
+      "name": "디파이언스 2X IREN ETF",
+      "price": null
+    },
+    {
+      "symbol": "RKLB",
+      "name": "로켓랩",
+      "price": null
+    },
+    {
+      "symbol": "DRAM",
+      "name": "라운드힐 메모리 ETF",
+      "price": null
+    },
+    {
+      "symbol": "INFQ",
+      "name": "인플렉션",
+      "price": null
+    },
+    {
+      "symbol": "MRVL",
+      "name": "마벨",
+      "price": null
+    },
+    {
+      "symbol": "442580.KS",
+      "name": "PLUS 글로벌HBM반도체",
+      "price": null
+    }
+  ]
+}
