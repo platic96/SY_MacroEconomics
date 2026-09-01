@@ -1,6 +1,6 @@
 {
   "date": "260902",
-  "generated_at_kst": "2026-09-02 07:52",
+  "generated_at_kst": "2026-09-02 08:21",
   "fear_greed": {
     "score": 45,
     "rating": "fear"
@@ -11,12 +11,12 @@
     "source": "yahoo"
   },
   "wti": {
-    "value": 90.84,
+    "value": 90.81,
     "date": "2026-09-02",
     "source": "yahoo"
   },
   "brent": {
-    "value": 95.29,
+    "value": 95.25,
     "date": "2026-09-02",
     "source": "yahoo"
   },
