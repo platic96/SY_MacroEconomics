@@ -1,6 +1,6 @@
 {
   "date": "261002",
-  "generated_at_kst": "2026-10-02 08:56",
+  "generated_at_kst": "2026-10-02 09:13",
   "fear_greed": {
     "score": 28,
     "rating": "fear"
@@ -16,7 +16,7 @@
     "source": "yahoo"
   },
   "brent": {
-    "value": 102.42,
+    "value": 102.47,
     "date": "2026-10-02",
     "source": "yahoo"
   },
