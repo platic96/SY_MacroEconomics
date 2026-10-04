@@ -1,6 +1,6 @@
 {
   "date": "261005",
-  "generated_at_kst": "2026-10-05 05:30",
+  "generated_at_kst": "2026-10-05 08:15",
   "fear_greed": {
     "score": 31,
     "rating": "fear"
@@ -11,13 +11,13 @@
     "source": "yahoo"
   },
   "wti": {
-    "value": 91.11,
-    "date": "2026-10-03",
+    "value": 91.15,
+    "date": "2026-10-05",
     "source": "yahoo"
   },
   "brent": {
-    "value": 102.25,
-    "date": "2026-10-03",
+    "value": 102.75,
+    "date": "2026-10-05",
     "source": "yahoo"
   },
   "us10y": {
