@@ -1,0 +1,35 @@
+name: Sync Claude branch to main
+
+# 06:00 루틴 세션이 main 에 직접 push 하지 못하고 claude/* 브랜치에만 올리는 날에도
+# 카톡용.txt 등이 main 에 자동 반영되도록, 브랜치 push 를 감지해 main 으로 복사한다.
+on:
+  push:
+    branches:
+      - 'claude/**'
+    paths:
+      - 'daily_news/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-claude-to-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Sync daily_news files to main
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          bash scripts/sync_branch_to_main.sh "$BRANCH"
