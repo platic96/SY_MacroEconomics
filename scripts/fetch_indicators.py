@@ -185,7 +185,23 @@ def fetch_weekly_series(symbol, days=5):
         return None
 
 
-def fetch_weekly():
+def weekly_fear_greed(current):
+    """주간 F&G: 주초 = 지난 금요일 종가가 반영된 파일(토 D-8, 없으면 일 D-7), 주말 = 오늘 값."""
+    start = None
+    for back in (8, 7):
+        ymd = (KST_NOW - timedelta(days=back)).strftime("%y%m%d")
+        path = os.path.join(OUT_DIR, f"{ymd}_지표.json")
+        try:
+            with open(path, encoding="utf-8") as f:
+                start = json.load(f).get("fear_greed")
+        except Exception:
+            start = None
+        if start:
+            break
+    return {"week_start": start, "week_end": current}
+
+
+def fetch_weekly(current_fg=None):
     """일요일용 주간 데이터: 지수·지표·관심종목의 주간 등락."""
     indices = [("^GSPC", "S&P 500"), ("^IXIC", "나스닥"),
                ("^DJI", "다우존스"), ("^KS11", "KOSPI")]
@@ -206,7 +222,8 @@ def fetch_weekly():
         w = fetch_weekly_series(sym)
         stocks.append({"symbol": sym, "name": name, **(w or {"week_pct": None})})
 
-    return {"indices": idx, "indicators": ind, "watchlist": stocks}
+    return {"indices": idx, "indicators": ind, "watchlist": stocks,
+            "fear_greed": weekly_fear_greed(current_fg)}
 
 
 def main():
@@ -224,7 +241,7 @@ def main():
     # 일요일(weekday()==6)에만 주간 데이터 추가 → 주간 시황 루틴에서 사용
     if KST_NOW.weekday() == 6:
         print("[주간] 일요일 감지 → 주간 데이터 수집")
-        data["weekly"] = fetch_weekly()
+        data["weekly"] = fetch_weekly(data["fear_greed"])
 
     os.makedirs(OUT_DIR, exist_ok=True)
     out_path = os.path.join(OUT_DIR, f"{YMD}_지표.json")
