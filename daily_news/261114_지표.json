@@ -1,22 +1,22 @@
 {
   "date": "261114",
-  "generated_at_kst": "2026-11-14 05:30",
+  "generated_at_kst": "2026-11-14 10:01",
   "fear_greed": {
-    "score": 38,
+    "score": 39,
     "rating": "fear"
   },
   "vix": {
-    "value": 18.95,
+    "value": 19.3,
     "date": "2026-11-14",
     "source": "yahoo"
   },
   "wti": {
-    "value": 88.73,
+    "value": 88.92,
     "date": "2026-11-14",
     "source": "yahoo"
   },
   "brent": {
-    "value": 95.92,
+    "value": 96.08,
     "date": "2026-11-14",
     "source": "yahoo"
   },
@@ -29,54 +29,54 @@
     {
       "symbol": "IREN",
       "name": "아이렌",
-      "price": 17.89,
-      "change": -1.59,
-      "pct": -8.19,
+      "price": 18.17,
+      "change": -1.31,
+      "pct": -6.72,
       "date": "2026-11-14",
       "currency": "USD"
     },
     {
       "symbol": "IRE",
       "name": "디파이언스 2X IREN ETF",
-      "price": 1.32,
-      "change": -0.28,
-      "pct": -17.19,
+      "price": 1.37,
+      "change": -0.23,
+      "pct": -14.37,
       "date": "2026-11-14",
       "currency": "USD"
     },
     {
       "symbol": "RKLB",
       "name": "로켓랩",
-      "price": 61.52,
+      "price": 61.53,
       "change": -2.54,
-      "pct": -3.97,
+      "pct": -3.96,
       "date": "2026-11-14",
       "currency": "USD"
     },
     {
       "symbol": "DRAM",
       "name": "라운드힐 메모리 ETF",
-      "price": 42.23,
-      "change": -1.43,
-      "pct": -3.28,
+      "price": 42.4,
+      "change": -1.26,
+      "pct": -2.89,
       "date": "2026-11-14",
       "currency": "USD"
     },
     {
       "symbol": "INFQ",
       "name": "인플렉션",
-      "price": 8.49,
-      "change": -0.24,
-      "pct": -2.69,
+      "price": 8.48,
+      "change": -0.25,
+      "pct": -2.86,
       "date": "2026-11-14",
       "currency": "USD"
     },
     {
       "symbol": "MRVL",
       "name": "마벨",
-      "price": 156.44,
-      "change": -8.01,
-      "pct": -4.87,
+      "price": 156.76,
+      "change": -7.69,
+      "pct": -4.68,
       "date": "2026-11-14",
       "currency": "USD"
     },
