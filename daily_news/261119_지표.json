@@ -1,22 +1,22 @@
 {
   "date": "261119",
-  "generated_at_kst": "2026-11-19 05:30",
+  "generated_at_kst": "2026-11-19 10:59",
   "fear_greed": {
     "score": 25,
     "rating": "extreme fear"
   },
   "vix": {
-    "value": 24.49,
+    "value": 24.56,
     "date": "2026-11-19",
     "source": "yahoo"
   },
   "wti": {
-    "value": 82.12,
+    "value": 82.73,
     "date": "2026-11-19",
     "source": "yahoo"
   },
   "brent": {
-    "value": 88.84,
+    "value": 89.82,
     "date": "2026-11-19",
     "source": "yahoo"
   },
@@ -29,36 +29,36 @@
     {
       "symbol": "IREN",
       "name": "아이렌",
-      "price": 15.13,
-      "change": -0.67,
-      "pct": -4.27,
+      "price": 15.24,
+      "change": -0.56,
+      "pct": -3.57,
       "date": "2026-11-19",
       "currency": "USD"
     },
     {
       "symbol": "IRE",
       "name": "디파이언스 2X IREN ETF",
-      "price": 0.93,
-      "change": -0.09,
-      "pct": -8.73,
+      "price": 0.95,
+      "change": -0.07,
+      "pct": -7.06,
       "date": "2026-11-19",
       "currency": "USD"
     },
     {
       "symbol": "RKLB",
       "name": "로켓랩",
-      "price": 53.31,
-      "change": -1.74,
-      "pct": -3.16,
+      "price": 53.07,
+      "change": -1.98,
+      "pct": -3.6,
       "date": "2026-11-19",
       "currency": "USD"
     },
     {
       "symbol": "DRAM",
       "name": "라운드힐 메모리 ETF",
-      "price": 38.8,
-      "change": -0.12,
-      "pct": -0.32,
+      "price": 39.15,
+      "change": 0.22,
+      "pct": 0.57,
       "date": "2026-11-19",
       "currency": "USD"
     },
@@ -67,26 +67,26 @@
       "name": "인플렉션",
       "price": 7.61,
       "change": 0.07,
-      "pct": 0.86,
+      "pct": 0.93,
       "date": "2026-11-19",
       "currency": "USD"
     },
     {
       "symbol": "MRVL",
       "name": "마벨",
-      "price": 143.66,
-      "change": -5.08,
-      "pct": -3.42,
+      "price": 145.54,
+      "change": -3.2,
+      "pct": -2.15,
       "date": "2026-11-19",
       "currency": "USD"
     },
     {
       "symbol": "442580.KS",
       "name": "PLUS 글로벌HBM반도체",
-      "price": 69945.0,
-      "change": 1080.0,
-      "pct": 1.57,
-      "date": "2026-11-18",
+      "price": 68760.0,
+      "change": -1185.0,
+      "pct": -1.69,
+      "date": "2026-11-19",
       "currency": "KRW"
     }
   ]
