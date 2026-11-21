@@ -1,22 +1,22 @@
 {
   "date": "261121",
-  "generated_at_kst": "2026-11-21 05:30",
+  "generated_at_kst": "2026-11-21 10:44",
   "fear_greed": {
     "score": 10,
     "rating": "extreme fear"
   },
   "vix": {
-    "value": 35.43,
+    "value": 35.89,
     "date": "2026-11-21",
     "source": "yahoo"
   },
   "wti": {
-    "value": 83.26,
+    "value": 83.62,
     "date": "2026-11-21",
     "source": "yahoo"
   },
   "brent": {
-    "value": 89.83,
+    "value": 89.87,
     "date": "2026-11-21",
     "source": "yahoo"
   },
@@ -29,54 +29,54 @@
     {
       "symbol": "IREN",
       "name": "아이렌",
-      "price": 12.03,
-      "change": -2.38,
-      "pct": -16.55,
+      "price": 11.82,
+      "change": -2.59,
+      "pct": -17.97,
       "date": "2026-11-21",
       "currency": "USD"
     },
     {
       "symbol": "IRE",
       "name": "디파이언스 2X IREN ETF",
-      "price": 0.57,
-      "change": -0.27,
-      "pct": -32.53,
+      "price": 0.54,
+      "change": -0.31,
+      "pct": -36.1,
       "date": "2026-11-21",
       "currency": "USD"
     },
     {
       "symbol": "RKLB",
       "name": "로켓랩",
-      "price": 45.39,
-      "change": -5.6,
-      "pct": -10.98,
+      "price": 45.42,
+      "change": -5.57,
+      "pct": -10.92,
       "date": "2026-11-21",
       "currency": "USD"
     },
     {
       "symbol": "DRAM",
       "name": "라운드힐 메모리 ETF",
-      "price": 33.63,
-      "change": -4.8,
-      "pct": -12.48,
+      "price": 33.36,
+      "change": -5.07,
+      "pct": -13.19,
       "date": "2026-11-21",
       "currency": "USD"
     },
     {
       "symbol": "INFQ",
       "name": "인플렉션",
-      "price": 6.42,
-      "change": -0.88,
-      "pct": -12.12,
+      "price": 6.32,
+      "change": -0.98,
+      "pct": -13.42,
       "date": "2026-11-21",
       "currency": "USD"
     },
     {
       "symbol": "MRVL",
       "name": "마벨",
-      "price": 122.29,
-      "change": -16.18,
-      "pct": -11.68,
+      "price": 122.28,
+      "change": -16.19,
+      "pct": -11.69,
       "date": "2026-11-21",
       "currency": "USD"
     },
