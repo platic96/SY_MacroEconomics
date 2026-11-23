@@ -112,6 +112,18 @@ WATCHLIST = [
 ]
 
 
+# 「오늘의 시장 한 장」 그림용 목록 (순서 = 그림 순서). unit: "$"면 앞에 $, ""면 숫자만
+CARD_LIST = [
+    ("^GSPC", "S&P 500", ""),
+    ("^NDX", "나스닥100", ""),
+    ("BTC-USD", "비트코인", "$"),
+    ("ETH-USD", "이더리움", "$"),
+    ("^KS11", "코스피", ""),
+    ("IREN", "아이렌", "$"),
+    ("DRAM", "메모리 ETF", "$"),
+]
+
+
 def fetch_stock(symbol):
     """관심 종목 종가 + 등락률 + 통화. 실패 시 None."""
     try:
@@ -148,6 +160,15 @@ def fetch_watchlist():
     for sym, name in WATCHLIST:
         d = fetch_stock(sym)
         out.append({"symbol": sym, "name": name, **(d or {"price": None})})
+    return out
+
+
+def fetch_card_list():
+    """시장 한 장 그림용: 지수·코인·종목 종가와 등락률."""
+    out = []
+    for sym, name, unit in CARD_LIST:
+        d = fetch_stock(sym)
+        out.append({"symbol": sym, "name": name, "unit": unit, **(d or {"price": None})})
     return out
 
 
@@ -236,6 +257,7 @@ def main():
         "brent": fetch_indicator("BZ=F", "DCOILBRENTEU"),
         "us10y": fetch_indicator("^TNX", "DGS10"),
         "watchlist": fetch_watchlist(),
+        "card": fetch_card_list(),
     }
 
     # 일요일(weekday()==6)에만 주간 데이터 추가 → 주간 시황 루틴에서 사용

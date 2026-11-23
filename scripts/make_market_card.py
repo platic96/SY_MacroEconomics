@@ -85,32 +85,46 @@ def main():
         if sub:
             ax.text(x0 + 24, 583, sub, fontsize=26, color=INK, va='center')
 
-    # 관심 종목 등락 막대
-    ax.text(70, 670, '관심 종목 등락 (전일 종가 기준)', fontsize=32, fontweight='bold', color=INK, va='center')
-    wl = [x for x in (d.get('watchlist') or []) if x.get('pct') is not None]
-    wl.sort(key=lambda x: x['pct'], reverse=True)
+    # 주요 지수·코인·종목 등락 막대 (JSON 'card' 순서 그대로, 없으면 watchlist)
+    card = d.get('card')
+    if card:
+        ax.text(70, 670, '주요 지수·코인·종목 등락', fontsize=32, fontweight='bold', color=INK, va='center')
+        ax.text(1010, 670, '지수·종목 전일 종가 / 코인 아침 시세', fontsize=20, color=GRAY, ha='right', va='center')
+        wl = [x for x in card if x.get('pct') is not None]
+    else:
+        ax.text(70, 670, '관심 종목 등락 (전일 종가 기준)', fontsize=32, fontweight='bold', color=INK, va='center')
+        wl = [x for x in (d.get('watchlist') or []) if x.get('pct') is not None]
+        wl.sort(key=lambda x: x['pct'], reverse=True)
     wl = wl[:8]
+
+    def label(x):
+        if not card:
+            nm = ALIAS.get(x.get('symbol'), x['name'])
+            return nm if len(nm) <= 11 else (x.get('symbol') or nm[:10])
+        p = x.get('price')
+        ps = (f'{p:,.0f}' if p >= 1000 else f'{p:,.2f}') if p is not None else '?'
+        return f"{x['name']} ({x.get('unit', '')}{ps})"
+
     if wl:
         m = max(abs(x['pct']) for x in wl) or 1
         rows = len(wl); rh = min(70, 500 / rows); y0 = 720
-        zx = 560 if any(x['pct'] < 0 for x in wl) else 380
-        right = 1010 - zx; left = zx - 380
+        zx = 640 if card else (560 if any(x['pct'] < 0 for x in wl) else 380)
+        right = 1010 - zx; left = zx - 400
         for i, x in enumerate(wl):
             y = y0 + i * rh + rh / 2
-            nm = ALIAS.get(x.get('symbol'), x['name'])
-            if len(nm) > 11: nm = x.get('symbol') or nm[:10]
-            ax.text(70, y, nm, fontsize=28, color=INK, va='center')
+            ax.text(70, y, label(x), fontsize=27 if card else 28, color=INK, va='center')
             p = x['pct']; col = GREEN if p >= 0 else RED
-            L = (right - 175) * abs(p) / m if p >= 0 else max(left - 10, 40) * abs(p) / m
             if p >= 0:
-                ax.add_patch(Rectangle((zx, y - rh * .3), L, rh * .6, color=col))
+                L = (right - 175) * abs(p) / m
+                ax.add_patch(Rectangle((zx, y - rh * .3), max(L, 3), rh * .6, color=col))
                 ax.text(zx + L + 12, y, f'▲{p:.1f}%', fontsize=28, fontweight='bold', color=col, va='center')
             else:
-                ax.add_patch(Rectangle((zx - L, y - rh * .3), L, rh * .6, color=col))
+                L = min((right - 175) * abs(p) / m, 120)
+                ax.add_patch(Rectangle((zx - L, y - rh * .3), max(L, 3), rh * .6, color=col))
                 ax.text(zx + 12, y, f'▼{abs(p):.1f}%', fontsize=28, fontweight='bold', color=col, va='center')
         ax.plot([zx, zx], [y0, y0 + rows * rh], color='#999', lw=2)
     else:
-        ax.text(70, 760, '관심 종목 조회 실패', fontsize=30, color=GRAY)
+        ax.text(70, 760, '등락 데이터 조회 실패', fontsize=30, color=GRAY)
 
     ax.text(70, 1262, '자료: CNN 공포·탐욕, Yahoo Finance (자동 수집) · 투자 권유 아님', fontsize=22, color=GRAY, va='center')
     ax.add_patch(Rectangle((0, 1290), 1080, 60, color=NAVY))
