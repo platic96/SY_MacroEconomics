@@ -25,12 +25,19 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install anthropic requests
+        run: |
+          pip install anthropic requests matplotlib
+          sudo apt-get install -y -qq fonts-nanum > /dev/null
+          rm -rf ~/.cache/matplotlib
 
       - name: Fetch market indicators
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python scripts/fetch_indicators.py
+
+      - name: Make market card image
+        run: python scripts/make_market_card.py
+        continue-on-error: true
 
       - name: Push to Notion diary
         env:
