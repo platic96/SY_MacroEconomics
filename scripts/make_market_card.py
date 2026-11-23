@@ -45,12 +45,19 @@ def main():
         print('지표 JSON 없음 — 그림 생략:', src); return
     d = json.load(open(src, encoding='utf-8'))
     full = f'20{ymd[:2]}.{ymd[2:4]}.{ymd[4:]}'
+    # 표시: 2026.11.24.(화) KST 05:40 기준 — 시각은 지표를 실제로 수집한 시각(generated_at_kst)
+    stamp = full + ' 기준'
+    try:
+        dt = datetime.datetime.strptime(d.get('generated_at_kst', ''), '%Y-%m-%d %H:%M')
+        stamp = dt.strftime('%Y.%m.%d.') + '(' + '월화수목금토일'[dt.weekday()] + ') KST ' + dt.strftime('%H:%M') + ' 기준'
+    except Exception:
+        pass
 
     fig = plt.figure(figsize=(10.8, 13.5), dpi=100)
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1080); ax.set_ylim(1350, 0); ax.axis('off')
     ax.add_patch(Rectangle((0, 0), 1080, 14, color=GOLD))
     ax.text(70, 95, '오늘의 시장 한 장', fontsize=46, fontweight='bold', color=NAVY, va='center')
-    ax.text(70, 160, f'{full} 아침 기준', fontsize=30, color=GRAY, va='center')
+    ax.text(70, 160, stamp, fontsize=30, color=GRAY, va='center')
 
     # 공포·탐욕 게이지
     fg = d.get('fear_greed') or {}
