@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install anthropic requests matplotlib
-          sudo apt-get install -y -qq fonts-nanum > /dev/null
+          (sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum) > /dev/null 2>&1 || echo "font install skipped"
           rm -rf ~/.cache/matplotlib
 
       - name: Fetch market indicators
