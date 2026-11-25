@@ -1,6 +1,6 @@
 {
   "date": "261125",
-  "generated_at_kst": "2026-11-25 13:05",
+  "generated_at_kst": "2026-11-25 13:23",
   "fear_greed": {
     "score": 17,
     "rating": "extreme fear"
@@ -11,12 +11,12 @@
     "source": "yahoo"
   },
   "wti": {
-    "value": 80.75,
+    "value": 80.77,
     "date": "2026-11-25",
     "source": "yahoo"
   },
   "brent": {
-    "value": 87.5,
+    "value": 87.47,
     "date": "2026-11-25",
     "source": "yahoo"
   },
@@ -83,9 +83,9 @@
     {
       "symbol": "442580.KS",
       "name": "PLUS 글로벌HBM반도체",
-      "price": 62235.0,
-      "change": -6305.0,
-      "pct": -9.2,
+      "price": 61690.0,
+      "change": -6850.0,
+      "pct": -9.99,
       "date": "2026-11-25",
       "currency": "KRW"
     }
@@ -115,9 +115,9 @@
       "symbol": "BTC-USD",
       "name": "비트코인",
       "unit": "$",
-      "price": 59051.61,
-      "change": -694.04,
-      "pct": -1.16,
+      "price": 59162.38,
+      "change": -583.27,
+      "pct": -0.98,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -125,9 +125,9 @@
       "symbol": "ETH-USD",
       "name": "이더리움",
       "unit": "$",
-      "price": 1655.3,
-      "change": -22.35,
-      "pct": -1.33,
+      "price": 1659.92,
+      "change": -17.73,
+      "pct": -1.06,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -135,9 +135,9 @@
       "symbol": "^KS11",
       "name": "코스피",
       "unit": "",
-      "price": 4745.05,
-      "change": -260.98,
-      "pct": -5.21,
+      "price": 4717.83,
+      "change": -288.2,
+      "pct": -5.76,
       "date": "2026-11-25",
       "currency": "KRW"
     },
