@@ -1,22 +1,22 @@
 {
   "date": "261125",
-  "generated_at_kst": "2026-11-25 05:30",
+  "generated_at_kst": "2026-11-25 12:44",
   "fear_greed": {
-    "score": 16,
+    "score": 17,
     "rating": "extreme fear"
   },
   "vix": {
-    "value": 26.99,
+    "value": 26.36,
     "date": "2026-11-25",
     "source": "yahoo"
   },
   "wti": {
-    "value": 81.59,
+    "value": 80.87,
     "date": "2026-11-25",
     "source": "yahoo"
   },
   "brent": {
-    "value": 88.33,
+    "value": 87.64,
     "date": "2026-11-25",
     "source": "yahoo"
   },
@@ -29,18 +29,18 @@
     {
       "symbol": "IREN",
       "name": "아이렌",
-      "price": 12.78,
-      "change": -1.86,
-      "pct": -12.7,
+      "price": 12.95,
+      "change": -1.69,
+      "pct": -11.54,
       "date": "2026-11-25",
       "currency": "USD"
     },
     {
       "symbol": "IRE",
       "name": "디파이언스 2X IREN ETF",
-      "price": 0.59,
-      "change": -0.23,
-      "pct": -28.05,
+      "price": 0.63,
+      "change": -0.19,
+      "pct": -23.17,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -56,37 +56,37 @@
     {
       "symbol": "DRAM",
       "name": "라운드힐 메모리 ETF",
-      "price": 35.84,
-      "change": -3.73,
-      "pct": -9.44,
+      "price": 35.92,
+      "change": -3.65,
+      "pct": -9.22,
       "date": "2026-11-25",
       "currency": "USD"
     },
     {
       "symbol": "INFQ",
       "name": "인플렉션",
-      "price": 6.22,
-      "change": -0.53,
-      "pct": -7.78,
+      "price": 6.34,
+      "change": -0.41,
+      "pct": -6.07,
       "date": "2026-11-25",
       "currency": "USD"
     },
     {
       "symbol": "MRVL",
       "name": "마벨",
-      "price": 131.4,
-      "change": -13.34,
-      "pct": -9.22,
+      "price": 131.57,
+      "change": -13.17,
+      "pct": -9.1,
       "date": "2026-11-25",
       "currency": "USD"
     },
     {
       "symbol": "442580.KS",
       "name": "PLUS 글로벌HBM반도체",
-      "price": 68540.0,
-      "change": 4910.0,
-      "pct": 7.72,
-      "date": "2026-11-24",
+      "price": 61670.0,
+      "change": -6870.0,
+      "pct": -10.02,
+      "date": "2026-11-25",
       "currency": "KRW"
     }
   ],
@@ -95,9 +95,9 @@
       "symbol": "^GSPC",
       "name": "S&P 500",
       "unit": "",
-      "price": 7180.68,
-      "change": -56.49,
-      "pct": -0.78,
+      "price": 7201.09,
+      "change": -36.08,
+      "pct": -0.5,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -105,9 +105,9 @@
       "symbol": "^NDX",
       "name": "나스닥100",
       "unit": "",
-      "price": 26119.56,
-      "change": -626.54,
-      "pct": -2.34,
+      "price": 26214.17,
+      "change": -531.93,
+      "pct": -1.99,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -115,9 +115,9 @@
       "symbol": "BTC-USD",
       "name": "비트코인",
       "unit": "$",
-      "price": 59497.88,
-      "change": -1713.27,
-      "pct": -2.8,
+      "price": 59393.42,
+      "change": -352.23,
+      "pct": -0.59,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -125,9 +125,9 @@
       "symbol": "ETH-USD",
       "name": "이더리움",
       "unit": "$",
-      "price": 1668.86,
-      "change": -39.99,
-      "pct": -2.34,
+      "price": 1663.19,
+      "change": -14.46,
+      "pct": -0.86,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -135,19 +135,19 @@
       "symbol": "^KS11",
       "name": "코스피",
       "unit": "",
-      "price": 5006.03,
-      "change": 297.49,
-      "pct": 6.32,
-      "date": "2026-11-24",
+      "price": 4717.18,
+      "change": -288.85,
+      "pct": -5.77,
+      "date": "2026-11-25",
       "currency": "KRW"
     },
     {
       "symbol": "IREN",
       "name": "아이렌",
       "unit": "$",
-      "price": 12.79,
-      "change": -1.85,
-      "pct": -12.6,
+      "price": 12.95,
+      "change": -1.69,
+      "pct": -11.54,
       "date": "2026-11-25",
       "currency": "USD"
     },
@@ -155,9 +155,9 @@
       "symbol": "DRAM",
       "name": "메모리 ETF",
       "unit": "$",
-      "price": 35.84,
-      "change": -3.73,
-      "pct": -9.43,
+      "price": 35.92,
+      "change": -3.65,
+      "pct": -9.22,
       "date": "2026-11-25",
       "currency": "USD"
     }
