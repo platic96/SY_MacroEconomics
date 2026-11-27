@@ -1,0 +1,165 @@
+{
+  "date": "261128",
+  "generated_at_kst": "2026-11-28 05:30",
+  "fear_greed": {
+    "score": 25,
+    "rating": "extreme fear"
+  },
+  "vix": {
+    "value": 23.81,
+    "date": "2026-11-28",
+    "source": "yahoo"
+  },
+  "wti": {
+    "value": 83.08,
+    "date": "2026-11-28",
+    "source": "yahoo"
+  },
+  "brent": {
+    "value": 90.84,
+    "date": "2026-11-28",
+    "source": "yahoo"
+  },
+  "us10y": {
+    "value": 4.94,
+    "date": "2026-11-28",
+    "source": "yahoo"
+  },
+  "watchlist": [
+    {
+      "symbol": "IREN",
+      "name": "아이렌",
+      "price": 13.61,
+      "change": 0.76,
+      "pct": 5.91,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "IRE",
+      "name": "디파이언스 2X IREN ETF",
+      "price": 0.68,
+      "change": 0.08,
+      "pct": 13.47,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "RKLB",
+      "name": "로켓랩",
+      "price": 50.88,
+      "change": 3.86,
+      "pct": 8.21,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "DRAM",
+      "name": "라운드힐 메모리 ETF",
+      "price": 37.57,
+      "change": 2.74,
+      "pct": 7.87,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "INFQ",
+      "name": "인플렉션",
+      "price": 7.05,
+      "change": 0.56,
+      "pct": 8.63,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "마벨",
+      "price": 140.54,
+      "change": 9.61,
+      "pct": 7.34,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "442580.KS",
+      "name": "PLUS 글로벌HBM반도체",
+      "price": 64575.0,
+      "change": 2690.0,
+      "pct": 4.35,
+      "date": "2026-11-27",
+      "currency": "KRW"
+    }
+  ],
+  "card": [
+    {
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "unit": "",
+      "price": 7297.49,
+      "change": 114.71,
+      "pct": 1.6,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "^NDX",
+      "name": "나스닥100",
+      "unit": "",
+      "price": 26726.39,
+      "change": 679.49,
+      "pct": 2.61,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "비트코인",
+      "unit": "$",
+      "price": 59743.47,
+      "change": -752.48,
+      "pct": -1.24,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "ETH-USD",
+      "name": "이더리움",
+      "unit": "$",
+      "price": 1665.59,
+      "change": -22.16,
+      "pct": -1.31,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "^KS11",
+      "name": "코스피",
+      "unit": "",
+      "price": 4915.68,
+      "change": 204.47,
+      "pct": 4.34,
+      "date": "2026-11-27",
+      "currency": "KRW"
+    },
+    {
+      "symbol": "IREN",
+      "name": "아이렌",
+      "unit": "$",
+      "price": 13.61,
+      "change": 0.76,
+      "pct": 5.91,
+      "date": "2026-11-28",
+      "currency": "USD"
+    },
+    {
+      "symbol": "DRAM",
+      "name": "메모리 ETF",
+      "unit": "$",
+      "price": 37.57,
+      "change": 2.74,
+      "pct": 7.87,
+      "date": "2026-11-28",
+      "currency": "USD"
+    }
+  ]
+}
