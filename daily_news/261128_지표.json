@@ -1,6 +1,6 @@
 {
   "date": "261128",
-  "generated_at_kst": "2026-11-28 12:13",
+  "generated_at_kst": "2026-11-28 12:23",
   "fear_greed": {
     "score": 25,
     "rating": "extreme fear"
@@ -115,9 +115,9 @@
       "symbol": "BTC-USD",
       "name": "비트코인",
       "unit": "$",
-      "price": 59918.46,
-      "change": 52.39,
-      "pct": 0.09,
+      "price": 59850.51,
+      "change": -15.56,
+      "pct": -0.03,
       "date": "2026-11-28",
       "currency": "USD"
     },
@@ -125,9 +125,9 @@
       "symbol": "ETH-USD",
       "name": "이더리움",
       "unit": "$",
-      "price": 1663.13,
-      "change": 2.09,
-      "pct": 0.13,
+      "price": 1661.56,
+      "change": 0.52,
+      "pct": 0.03,
       "date": "2026-11-28",
       "currency": "USD"
     },
